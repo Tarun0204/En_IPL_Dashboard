@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback } from 'react'
 import { useParams } from 'react-router-dom'
 import { Oval } from 'react-loader-spinner'
+import {Link} from "react-router-dom"
 
 import LatestMatch from '../LatestMatch'
 import MatchCard from '../MatchCard'
