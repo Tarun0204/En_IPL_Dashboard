@@ -67,12 +67,21 @@ const TeamMatches = () => {
   const renderRecentMatchesList = () => {
     const { recentMatches } = teamMatchesData
 
-    return (
-      <ul className="recent-matches-list">
-        {recentMatches.map(recentMatch => (
-          <MatchCard matchDetails={recentMatch} key={recentMatch.id} />
-        ))}
-      </ul>
+   return (
+      <>
+        <ul className="recent-matches-list">
+          {recentMatches.map(recentMatch => (
+            <MatchCard matchDetails={recentMatch} key={recentMatch.id} />
+          ))}
+        </ul>
+        <div className="back-button">
+          <Link to="/">
+            <button className="back" type="button">
+              Back
+            </button>
+          </Link>
+        </div>
+      </>
     )
   }
 
